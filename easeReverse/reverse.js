@@ -1,3 +1,5 @@
+gsap.registerPlugin(Flip);
+
 console.clear(); // Start with a clean console on refesh
 
 const slider = document.querySelector(".slider");
