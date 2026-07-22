@@ -76,7 +76,7 @@ html, body {
 }
 
 .menu-btn:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
-.menu-btn svg { ;overflow: visible; display: block; }
+.menu-btn svg { overflow: visible; display: block; }
 
 /* ── OVERLAY ── */
 .menu-overlay {
