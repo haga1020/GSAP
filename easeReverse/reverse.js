@@ -5,9 +5,7 @@
 
 let isOpen = false;
 let exitSpeed = 1;
-const toggleEl = document.querySelector('#easeReverse');
-const exitSlider = document.querySelector('#exitSpeed');
-const exitLabel = document.querySelector('#exitSpeedVal');
+const er = true;
 const island = document.querySelector('.island');
 const expandedWidth = Math.min(window.innerWidth * 0.9, 400);
 let tl;
@@ -28,18 +26,7 @@ function init() {
 }
 init();
 
-toggleEl.addEventListener('change', () => {
-  if (isOpen) {
-    isOpen = false;
-    document.getElementById('menuToggle').setAttribute('aria-expanded', false);
-  }
-  init();
-});
 
-exitSlider.addEventListener('input', () => {
-  exitSpeed = parseFloat(exitSlider.value);
-  exitLabel.textContent = exitSpeed + '×';
-});
 
 function toggle() {
   isOpen = !isOpen;
