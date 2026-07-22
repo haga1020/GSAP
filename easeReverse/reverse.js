@@ -4,7 +4,6 @@
 */
 
 let isOpen = false;
-let exitSpeed = 1;
 const er = true;
 const island = document.querySelector('.island');
 const expandedWidth = Math.min(window.innerWidth * 0.9, 400);
@@ -37,7 +36,7 @@ function toggle() {
     tl.timeScale(1).play();
   } else {
     tl.eventCallback('onReverseComplete', () => gsap.set('.menu-overlay', { pointerEvents: 'none' }));
-    tl.timeScale(exitSpeed).reverse();
+    tl.timeScale(1).reverse();
   }
 }
 
