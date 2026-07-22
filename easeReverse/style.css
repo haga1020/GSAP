@@ -24,77 +24,6 @@ html, body {
   overflow: hidden;
 }
 
-/* ─── Header ─── */
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  gap: 16px;
-  padding: 80px 24px 24px;
-}
-.header h1 {
-  color: var(--light);
-  font-weight: 400;
-  font-size: clamp(1.4rem, 3vw, 2rem);
-}
-
-.header h1 code {
-    font-size: clamp(1.4rem, 3vw, 2rem);
-}
-.header p {
-  color: var(--s50);
-  font-size: 0.88rem;
-  margin-top: 8px;
-  max-width: 70ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  font-family: Fraktion Mono, monospace;
-  font-size: 0.72rem;
-  background: rgba(10, 228, 72, 0.08);
-  color: var(--green);
-  padding: 2px 6px;
-  border-radius: 3px;
-}
-
-.controls {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  font-size: 0.72rem;
-  color: var(--s50);
-}
-.controls label {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  cursor: pointer;
-}
-.controls input[type="checkbox"] {
-  accent-color: var(--green);
-}
-.controls input[type="range"] {
-  width: 64px;
-  accent-color: var(--green);
-}
-.controls code {
-  font-family: Fraktion Mono, monospace;
-  font-size: 0.66rem;
-  background: rgba(10, 228, 72, 0.08);
-  color: var(--green);
-  padding: 2px 6px;
-  border-radius: 3px;
-}
-.speed-val {
-  font-family: Fraktion Mono, monospace;
-  font-size: 0.66rem;
-  min-width: 2em;
-}
 
 /* ── ISLAND ── */
 .island {
@@ -187,11 +116,11 @@ code {
   font-weight: 400; font-size: 1rem; line-height: 1;
 }
 
-.menu-link + .menu-link { border-top: 1px solid var(--color-surface25); border-radius: 0; }
+.menu-link + .menu-link { border-top: 1px solid var(--s25); border-radius: 0; }
 .menu-link:first-child { border-radius: 10px 10px 0 0; }
 .menu-link:last-child  { border-radius: 0 0 10px 10px; }
 .menu-link:only-child  { border-radius: 10px; }
-.menu-link:hover { color: var(--color-shockingly-green); }
+.menu-link:hover { color: var(--green); }
 .menu-link:focus-visible { outline: 2px solid var(--green); outline-offset: -2px; border-radius: 10px; }
 
 .link-num {
@@ -209,4 +138,4 @@ code {
   align-items: center; justify-content: center;
   gap: 0.2rem; pointer-events: none; user-select: none;
 }
-p { color: var(--color-surface25); }
+p { color: var(--s25); }
