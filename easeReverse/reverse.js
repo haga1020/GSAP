@@ -14,7 +14,7 @@ function init() {
   tl = gsap.timeline({ paused: true })
     .set('.menu-overlay', { pointerEvents: 'auto' })
     .to('.island', { width: expandedWidth, duration: 0.8, ease: 'back.out(2)', easeReverse: er ? 'power2.out' : false }, 0)
-    .to('.island-logo', { opacity: 1, rotation: 180, duration: 0.5, ease: 'back.out', easeReverse: er ? 'power4.out' : false }, 0.12)
+    .to('.island-logo', { opacity: 1, rotation: 360, duration: 0.5, ease: 'back.out', easeReverse: er ? 'power4.out' : false }, 0.12)
     .to('.bar-mid', { opacity: 0, duration: 0.15, ease: 'power2.in', easeReverse: er }, 0)
     .to('.bar-top', { attr: { x1: 3, y1: 3, x2: 13, y2: 13 }, duration: 0.28, ease: 'power3.inOut' }, 0)
     .to('.bar-bot', { attr: { x1: 13, y1: 3, x2: 3, y2: 13 }, duration: 0.28, ease: 'power3.inOut' }, 0)
