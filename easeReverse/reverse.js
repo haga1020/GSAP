@@ -1,3 +1,8 @@
+/*
+使用ライブラリ
+・GSAP本体のみ
+*/
+
 let isOpen = false;
 let exitSpeed = 1;
 const toggleEl = document.querySelector('#easeReverse');
