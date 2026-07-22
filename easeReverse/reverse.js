@@ -12,7 +12,6 @@ let tl;
 
 function init() {
   tl && tl.revert();
-  const er = toggleEl.checked;
   tl = gsap.timeline({ paused: true })
     .set('.menu-overlay', { pointerEvents: 'auto' })
     .to('.island', { width: expandedWidth, duration: 0.8, ease: 'back.out(2)', easeReverse: er ? 'power2.out' : false }, 0)
