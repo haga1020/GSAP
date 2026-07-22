@@ -26,10 +26,15 @@ html, body {
 
 
 /* ── ISLAND ── */
+/*メニューボタンの場所*/
 .island {
   position: fixed;
-  top: 1.25rem; left: 50%;
-  transform: translateX(-50%);
+  /*top: 1.25rem; left: 50%;
+  transform: translateX(-50%);*/
+  /*右上用*/
+  top: 20px; right: 20px;
+  left: auto;
+  transform: none;
   z-index: 1000;
   display: flex;
   align-items: center;
